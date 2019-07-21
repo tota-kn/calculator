@@ -1,0 +1,51 @@
+/* main */
+main {
+  background: #eeeeee;
+  font-size: 40px;
+}
+
+main .container {
+  background: #dddddd;
+  margin: 50px;
+  text-align: center;
+}
+
+main .container .calculator {
+  display: inline-block;
+}
+
+main .container .calculator input {
+  border: 3px solid #666666;
+  border-radius: 5px;
+  width: 500px;
+  height: 80px;
+}
+
+main .container .calculator h1 {
+  text-align: center;
+}
+
+main .container .calculator button {
+  width: 125px;
+  height: 80px;
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+main .container .calculator button.ac {
+  background-color: #ffb1b1;
+}
+
+main .container .calculator button.equals {
+  background-color: #b1b6ff;
+}
+
+main .container .calculator button.disabled {
+  background-color: #333333;
+}
+
+main .container .calculator button:hover {
+  color: #960000;
+  border: 2px solid #888888;
+}
+/*# sourceMappingURL=main.css.map */

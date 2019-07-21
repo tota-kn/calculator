@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="電卓">
+    <title>電卓</title>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- ========== main ========== -->
+    <main>
+        <div class="container">
+            <div class="title">
+                <p>電卓</p>
+            </div>
+            <div class="calculator">
+                <input id="input" type="text">
+                <table>
+                    <tr>
+                        <th><button id="btnLeftParenthesis" class="disabled" disabled
+                                onclick="inputNum('btnLeftParenthesis')">(</button></th>
+                        <th><button id="btnRightParenthesis" class="disabled" disabled
+                                onclick="inputNum('btnRightParenthesis')">)</button>
+                        </th>
+                        <th><button id="btnPersent" onclick="inputNum('btnPersent')">%</button></th>
+                        <th><button id="btnAC" class="ac" onclick="allClear()">AC</button></th>
+                    </tr>
+                    <tr>
+                        <th><button id="btn7" onclick="inputNum('btn7')">7</button></th>
+                        <th><button id="btn8" onclick="inputNum('btn8')">8</button></th>
+                        <th><button id="btn9" onclick="inputNum('btn9')">9</button></th>
+                        <th><button id="btnDivide" onclick="inputNum('btnDivide')">/</button></th>
+                    </tr>
+                    <tr>
+                        <th><button id="btn4" onclick="inputNum('btn4')">4</button></th>
+                        <th><button id="btn5" onclick="inputNum('btn5')">5</button></th>
+                        <th><button id="btn6" onclick="inputNum('btn6')">6</button></th>
+                        <th><button id="btnMultiply" onclick="inputNum('btnMultiply')">*</button></th>
+                    </tr>
+                    <tr>
+                        <th><button id="btn1" onclick="inputNum('btn1')">1</button></th>
+                        <th><button id="btn2" onclick="inputNum('btn2')">2</button></th>
+                        <th><button id="btn3" onclick="inputNum('btn3')">3</button></th>
+                        <th><button id="btnMinus" onclick="inputNum('btnMinus')">-</button></th>
+                    </tr>
+                    <tr>
+                        <th><button id="btn0" onclick="inputNum('btn0')">0</button></th>
+                        <th><button id="btnPeriod" onclick="inputNum('btnPeriod')" value='period'>.</button></th>
+                        <th><button id="btnEquals" class="equals" onclick="Equals()">=</button></th>
+                        <th><button id="btnPlus" onclick="inputNum('btnPlus')">+</button></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- ========== /main ========== -->
+    <script src="main.js"></script>
+</body>
+
+</html>
